@@ -2,8 +2,10 @@ package com.prepquest.prepquest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
+@EntityScan(basePackages = "com.prepquest.prepquest.model")
 public class PrepquestApplication {
 
     public static void main(String[] args) {
